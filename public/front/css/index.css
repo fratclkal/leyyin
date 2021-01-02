@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    outline: 0;
+    border: 0;
+}
+
+h5{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url('../media/gplaypattern.png');
+    background-repeat: repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.altern-body{
+    box-shadow: 0px 2px 22px 2px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*  HEADER START */
+
+.altern-body .mobile-menu{
+    display: none;
+}
+
+header{
+    background-color: white;
+    width: 100%;
+    height: 100px ;
+    margin-top: 50px;
+    border-top: 1px solid rgb(211, 211, 211);
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+header .mobile-logo {
+   display: none;
+}
+
+header >ul{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0 !important;
+}
+
+header ul li ul {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    top: 120px;
+    margin-left: -30px;
+ }
+
+header ul li ul li {
+   width: auto;
+   background-color: white;
+   text-align: start;
+   padding: 14px 8px 14px 4px;
+   border: 1px solid rgb(245, 245, 245);
+}
+
+header ul li ul li a {
+    width: 100%;
+    padding: 2px 10px 2px 10px;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header >ul #logo{
+    height: 95px;
+}
+
+header >ul >li >a{
+    text-decoration: none;
+    color: black;
+    padding: 9px 24px;
+    white-space: nowrap;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header ul li ul li a:hover{
+    color: #ff9933;
+    text-decoration: none;
+    border-left: 3px solid ;
+    padding: 2px 7px 2px 10px;
+
+ }
+
+header ul li a i{
+    margin-right: 4px;
+    font-size: 20px;
+}
+
+header >ul >li >a:hover{
+    color: #ff9933;
+    text-decoration: none;
+    border-top: 5px solid ;
+ }
+
+header ul li:hover li{
+    display: block;
+ }
+
+ #open-menu-button{
+     display: none;
+ }
+
+
+ #open-menu-button{
+    display: none;
+}
+
+ #mobile-menu{
+     display: none;
+ }
+
+/*  HEADER END */
+
+
+/*  SLIDER START */
+
+.slider{
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    margin: 0 auto;
+}
+.slider img{
+    height: 500px;
+    width: 100%;
+}
+
+/*  SLIDER END */
+
+
+
+/*  INFOS START */
+
+.infos{
+    width: 100%;
+    margin: 0 auto;
+    height: 90px;
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid rgb(211, 211, 211);
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.infos i{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+.infos .number{
+    text-align: center;
+    margin-top: 5px;
+    width: 23%;
+    white-space: nowrap;
+}
+
+.infos .number h5{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.infos .slogan{
+    width: 54%;
+    text-align: center;
+    margin-top: 5px;
+    white-space: nowrap;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+.infos .slogan h4{
+    font-size: 40px;
+    color: #0099cc;
+}
+
+.infos .slogan .typing{
+    color: #ff8000;
+}
+
+.infos .mail{
+    margin-top: 5px;
+    width: 23%;
+    white-space: nowrap;
+
+}
+
+.infos .mail h5{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+
+/*  INFOS END */
+
+
+/*  MAP-swiper START */
+.map-swiper{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 0px 9px -7px rgba(0,0,0,0.76);
+    padding-bottom: 100px;
+}
+
+.map-swiper .swiper{
+    width: 80%;
+    text-align: center;
+}
+
+.map-swiper .swiper h4{
+    font-family: 'Pacifico', cursive;
+    color: #333;
+    margin-top: 60px;
+}
+
+
+.map-swiper iframe{
+    margin-top: 70px;
+    height: 200px;
+    width: 90%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+  }
+
+  .swiper-slide {
+    margin-right: 0px !important;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .append-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .append-buttons a {
+    display: inline-block;
+    border: 1px solid #007aff;
+    color: #007aff;
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
+  }
+/*  MAP-swiper END */
+
+
+
+
+/*  FOOTER START */
+
+footer{
+    width: 100%;
+    height: 40px;
+    background: #333;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+footer h5{
+   font-family: 'Roboto', sans-serif;
+   line-height: 40px;
+   font-size: 15px;
+}
+
+footer p{
+    position: absolute;
+    top: 0;
+    line-height: 40px;
+    right: 20px;
+}
+
+/*  FOOTER END */
+
+
+/* Desktops and laptops */
+@media only screen and (max-width : 1224px) {
+    /* CSS KODLARI BURAYA */
+
+
+}
+
+
+/* tabs */
+@media only screen and (max-width : 1024px) {
+
+    /* CSS KODLARI BURAYA */
+    header ul{
+        background-color: green;
+    }
+
+    header .mobile-logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .mobile-logo img{
+        height: 90px;
+        margin-top: 5px;
+        margin: 0 auto;
+    }
+
+    #close-menu-button{
+        display: block;
+        font-size: 40px;
+        background-color: #333;
+        width: 70px;
+        margin: 0 auto;
+        margin-top: -20px;
+        color: white;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    #open-menu-button{
+        display: block;
+        font-size: 30px;
+        background-color: #333;
+        padding: 10px;
+        margin: 0;
+        color: white;
+        width: 100%;
+    }
+
+    .mobile-menu-active{
+        top: 0px !important;
+        transition: .3s ease;
+    }
+
+    #mobile-menu{
+        display: flex;
+        flex-direction: column;
+        width: 101%;
+        position: fixed;
+        left: 0;
+        top: -800px;
+        z-index: 2;
+    }
+
+    #mobile-menu >ul{
+        background-color: #333;
+        height: 100%;
+        padding-left: 0;
+    }
+
+    #mobile-menu >ul >li{
+       margin: 1% 0;
+       line-height: 50px;
+       border-bottom: 1px solid rgb(73, 73, 73);
+    }
+
+    #mobile-menu >ul >li:last-child{
+        border-bottom: 0px ;
+    }
+
+    #mobile-menu ul li a{
+        color: #ff8000;
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    #mobile-menu ul li a label{
+        color: #ff8000;
+        padding: 5px 70px ;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+
+    #mobile-menu ul li a label:active{
+        color: #ffc891;
+    }
+
+    #mobile-menu ul li a label i{
+        margin-right: 8px;
+    }
+
+    #mobile-menu ul li ul{
+        display: none;
+    }
+
+    #desktop-menu{
+        display: none;
+    }
+
+    /* INFOS START */
+
+    .infos .number h5{
+        font-size: 15px;
+    }
+
+    .infos .slogan{
+        width: 54%;
+        text-align: center;
+        margin-top: 5px;
+        white-space: nowrap;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+    }
+
+    .infos .slogan h4{
+        font-size: 35px;
+    }
+
+    .infos .mail h5{
+        font-size: 15px;
+    }
+
+    /* INFOS END */
+
+  .swiper-slide img{
+    height: 150px !important;
+  }
+
+
+  /* product detail page*/
+
+    section .content .details table {
+        width: 150px;
+    }
+
+    section .content  img{
+        width: 300px;
+        margin-bottom: 100px;
+    }
+
+
+  /* product detail page end*/
+
+
+  /* corporate page start*/
+
+    .banner h3{
+        font-size: 30px;
+    }
+
+  /* corporate page end*/
+
+
+  /* contact page start*/
+
+    .content .contact{
+
+    }
+
+ /* contact page end*/
+ section .content{
+    padding-top: 120px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+        section .content .contact{
+            width: 90%;
+            flex-direction: column;
+            border-left: 0px solid #333;
+            margin: 0 auto;
+        }
+
+
+        section .content .contact h5{
+            border-left: 4px solid #333;
+            padding-left: 10px;
+            opacity: .6;
+            font-size: 20px;
+        }
+
+
+        section .content .contact h4{
+            font-size: 15px;
+        }
+
+        section .content .map{
+            margin-top: 50px;
+            width: 90%;
+        }
+
+  /*  FOOTER START */
+
+  footer{
+      width: 100%;
+      height: 40px;
+      background: #333;
+      color: white;
+      position: relative;
+      text-align: center;
+  }
+
+  footer h5{
+     font-family: 'Roboto', sans-serif;
+     line-height: 40px;
+     font-size: 12px;
+  }
+
+  footer p{
+      font-size: 10px;
+      position: absolute;
+      top: 0;
+      line-height: 40px;
+      right: 20px;
+  }
+  /*  FOOTER END */
+
+
+
+
+
+
+}
+
+/* mobile*/
+@media only screen and (max-width : 768px)  {
+/* CSS KODLARI BURAYA */
+    header ul{
+        background-color:yellow;
+    }
+
+    .altern-body{
+        width: 90%;
+    }
+
+    .slider img{
+        height: 300px
+    }
+
+    .infos .slogan h4{
+        font-size: 40px
+    }
+
+    .infos .mail{
+        display: none;
+    }
+
+    .infos .number{
+        display: none;
+    }
+
+    .swiper-slide img{
+        height: 100px !important;
+      }
+
+    footer{
+        text-align: start;
+    }
+
+    footer h5{
+        font-family: 'Roboto', sans-serif;
+        line-height: 40px;
+        font-size: 9px;
+        margin-left: 10px;
+    }
+
+    footer p{
+        position: absolute;
+        top: 0;
+        line-height: 40px;
+        right: 20px;
+        font-size: 10px;
+    }
+
+
+
+}
+
+
+

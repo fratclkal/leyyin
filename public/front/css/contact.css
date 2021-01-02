@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+h5{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url('../media/gplaypattern.png');
+    background-repeat: repeat;
+    background-size: auto;
+    position: relative;
+
+}
+
+.altern-body{
+    box-shadow: 0px 2px 22px 2px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*  HEADER START */
+header{
+    background-color: white;
+    width: 100%;
+    height: 100px ;
+    margin-top: 50px;
+    border-top: 1px solid rgb(211, 211, 211);
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+header >ul{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header ul li ul {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    margin-top: 5px;
+ }
+
+header ul li ul li {
+   width: 140px;
+   background-color: white;
+   text-align: start;
+   padding: 5px;
+   border: 1px solid rgb(245, 245, 245);
+}
+
+header ul li ul li a {
+    width: 100%;
+    padding: 2px 10px;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header >ul #logo{
+    height: 95px;
+}
+
+header >ul >li >a{
+    text-decoration: none;
+    color: black;
+    padding: 9px 24px;
+    white-space: nowrap;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header ul li ul li a:hover{
+    color: #ff9933;
+    text-decoration: none;
+    border-left: 3px solid ;
+ }
+
+header ul li a i{
+    margin-right: 4px;
+    font-size: 20px;
+}
+
+header >ul >li >a:hover{
+    color: #ff9933;
+    text-decoration: none;
+    border-top: 5px solid ;
+ }
+
+header ul li:hover li{
+    display: block;
+ }
+
+/*  HEADER END */
+
+
+/*  BANNER START */
+
+.banner{
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    background: url(../media/contact-us.jpg);
+    height: 350px;
+    position: relative;
+}
+
+.banner h3{
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: white;
+}
+
+/*  BANNER END */
+
+/*  SECTION START */
+section{
+    width: 100%;
+    background-color: white;
+    padding-bottom: 150px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .content{
+    padding-top: 120px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .content .contact{
+    width: 45%;
+    margin-right: 5%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 10px solid #333;
+    padding-left: 8px;
+}
+
+
+section .content .contact h5{
+   margin: 20px 0 20px 25px;
+   opacity: .6;
+}
+
+
+section .content .contact h4{
+    margin-left: 40px 
+ }
+
+section .content .contact span{
+    opacity: 1;
+}
+
+section .content .map{
+    width: 450px;
+    height: 300px;
+    width: 45%;
+}
+
+section .content .map iframe{
+   width: 100%;
+   height: 100%;
+}
+
+/*  SECTION END */
+
+/*  MAP START */
+
+
+footer{
+    width: 100%;
+    height: 40px;
+    background: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -25px;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    background: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+footer h5{
+   font-family: 'Roboto', sans-serif;
+   line-height: 40px;
+   font-size: 15px;
+}
+
+footer p{
+    position: absolute;
+    top: 0;
+    line-height: 40px;
+    right: 20px;
+}
+
+
+
+
+/*  MAP END */
+
+
+@media only screen and (max-width : 1024px) {
+    
+    
+ 
+    
+}
