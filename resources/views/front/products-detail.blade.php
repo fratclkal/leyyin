@@ -9,7 +9,7 @@
                 <table>
                     <tr><th>SasdasdasdasdasdasddasdasdA</th> </tr>
                     <tr><th>AS</th></tr>
-                    <tr><th>SA</th> </tr>
+                    <tr><th>SA</th></tr>
                     <tr><th>asdasdasdasdadasdasdassdasdassdasdasdasdAS</th> </tr>
                 </table>
             </div>

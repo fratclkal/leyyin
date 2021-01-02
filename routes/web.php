@@ -66,6 +66,8 @@ Route::get('leyyin/iletisim',[App\Http\Controllers\front\ProductController::clas
 Route::get('/leyyin/anasayfa/{id}',[App\Http\Controllers\front\ProductController::class,'deneme'])->name('deneme');
 Route::get('/leyyin/menu',[App\Http\Controllers\front\ProductController::class,'menublade'])->name('menu-blade');
 
-
-
-Route::get('/anasayfa',[App\Http\Controllers\front\FrontController::class,'index']);
+Route::get('/anasayfa',[App\Http\Controllers\front\FrontController::class,'index'])->name('index');
+Route::get('/urun',[App\Http\Controllers\front\FrontController::class,'products'])->name('products');
+Route::get('/urunler/detay',[App\Http\Controllers\front\FrontController::class,'products_detail'])->name('products_detail');
+Route::get('/kurumsal',[App\Http\Controllers\front\FrontController::class,'about'])->name('about');
+Route::get('/iletisim',[App\Http\Controllers\front\FrontController::class,'contact'])->name('contact');

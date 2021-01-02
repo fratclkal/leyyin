@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+*:focus{
+    outline: 0;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -62,10 +66,10 @@ header >ul{
 }
 
 header ul li ul {
-    position: absolute;
-    z-index: 2;
-    display: none;
-    top: 120px;
+    position: absolute !important;
+    z-index: 2 !important;
+    display: none ;
+    top: 70px;
     margin-left: -30px;
  }
 
@@ -504,39 +508,43 @@ footer p{
 
  /* contact page end*/
  section .content{
-    padding-top: 120px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding-top: 120px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
+    section .content h4{
+        padding: 0 !important;
+    }
 
         section .content .contact{
-            width: 90%;
-            flex-direction: column;
-            border-left: 0px solid #333;
-            margin: 0 auto;
+            width: 90% !important;
+            flex-direction: column !important;
+            border-left: 0px solid #333 !important;
+            margin: 0 auto !important;
+            text-align: start !important;
         }
 
 
         section .content .contact h5{
-            border-left: 4px solid #333;
-            padding-left: 10px;
-            opacity: .6;
-            font-size: 20px;
+            border-left: 4px solid #333 !important;
+            padding-left: 10px !important;
+            opacity: .6 !important;
+            font-size: 20px !important;
         }
 
 
         section .content .contact h4{
-            font-size: 15px;
+            font-size: 15px !important;
         }
 
         section .content .map{
-            margin-top: 50px;
-            width: 90%;
+            margin-top: 50px !important;
+            width: 90% !important;
         }
 
   /*  FOOTER START */
@@ -565,11 +573,6 @@ footer p{
   }
   /*  FOOTER END */
 
-
-
-
-
-
 }
 
 /* mobile*/
@@ -580,7 +583,7 @@ footer p{
     }
 
     .altern-body{
-        width: 90%;
+        width: 90% !important;
     }
 
     .slider img{
@@ -602,6 +605,18 @@ footer p{
     .swiper-slide img{
         height: 100px !important;
       }
+
+    .content  {
+        width: 100% !important;
+    }
+
+    .content img{
+        width: 80% !important;
+    }
+
+    .content .details table th{
+        font-size: 12px;
+    }
 
     footer{
         text-align: start;

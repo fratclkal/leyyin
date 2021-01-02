@@ -1,7 +1,7 @@
 @extends('front.index')
 @section('content')
 
-    <div class="banner">
+    <div class="products-banner">
     </div>
 
     <section>

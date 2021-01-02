@@ -1,7 +1,7 @@
 @extends('front.index')
 @section('content')
 
-    <div class="banner">
+    <div class="contact-banner">
         <h3>İletişim</h3>
     </div>
 
