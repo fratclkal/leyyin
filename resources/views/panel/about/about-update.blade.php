@@ -17,10 +17,13 @@
             <form action="{{route('about-update', $about -> id)}}" method="POST">
                 @csrf
                 <span>Başlık: &nbsp; </span><br><textarea name="title" id="" cols="30" rows="2">{{$about -> title}}</textarea><br><br>
-                <span>İçerik: &nbsp; </span><br><textarea name="content" id="" cols="85" rows="20">{{$about -> content}}</textarea>
+                <span>İçerik: &nbsp; </span><br><textarea name="content" id="content" cols="85" rows="20">{{$about -> content}}</textarea>
                 <button type="submit">Güncelle</button>
                 <br><br>
             </form>
         </div>
     </div>
+    <script>
+        CKEDITOR.replace('content');
+    </script>
 @endsection

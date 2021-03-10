@@ -9,10 +9,10 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->/*get('/dashboard', function ()*/ group( function() {
-    //Route::get('/panel', [App\Http\Controllers\panel\AdminController::class, 'index']);
-    //Menu
+    Route::get('/dashboard', [App\Http\Controllers\panel\AdminController::class, 'index'])->name('firat.index');
+
     Route::group(['prefix' => 'firat'], function () {
-        Route::get('/', [App\Http\Controllers\panel\AdminController::class, 'index']);
+
         Route::get('/panel/menu', [App\Http\Controllers\panel\AdminController::class, 'menu']);
         Route::post('/panel/menu', [App\Http\Controllers\panel\AdminController::class, 'createMenu'])->name('menu');
         Route::get('/panel/menuler', [App\Http\Controllers\panel\AdminController::class, 'listMenu'])->name('menu-list');
@@ -78,4 +78,4 @@ Route::get('/urun',[App\Http\Controllers\front\FrontController::class,'products'
 Route::get('/iletisim',[App\Http\Controllers\front\FrontController::class,'contact'])->name('iletisimler');
 Route::get('/kurumsal',[App\Http\Controllers\front\FrontController::class,'about'])->name('kurumsal');
 Route::get('/detay/{id}',[App\Http\Controllers\front\FrontController::class,'products_detail'])->name('detay');
-Route::get('/anasayfa',[App\Http\Controllers\front\FrontController::class,'slider'])->name('sliderdeneme');
+Route::get('/',[App\Http\Controllers\front\FrontController::class,'slider'])->name('sliderdeneme');

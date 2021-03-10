@@ -19,10 +19,14 @@
             <span>Başlık <br></span>
             <textarea name="title" id="" cols="30" rows="2" required></textarea><br>
             <span>İçerik <br></span>
-            <textarea name="content" id="" cols="85" rows="20" required></textarea>
+            <textarea name="content" id="content" cols="85" rows="20" required></textarea>
 
             <button type="submit">Yazıyı Ekle</button>
         </form>
         <br>
     </div>
+
+    <script>
+        CKEDITOR.replace('content');
+    </script>
 @endsection

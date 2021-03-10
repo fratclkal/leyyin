@@ -8,7 +8,7 @@
                 <h5>{{$product -> title}}</h5>
                 <table>
 
-                    <tr><th>{{$product -> content}}</th></tr>
+                    <tr><th>{!! $product -> content !!}</th></tr>
 
                 </table>
             </div>

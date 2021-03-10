@@ -19,7 +19,7 @@
                 <span>Ürün Adı</span><br>
                 <textarea name="title" id="" cols="20" rows="2">{{$product -> title}}</textarea><br><br>
                 <span>Ürün Özellikleri</span><br>
-                <textarea name="content" id="" cols="30" rows="10">{{$product -> content}}</textarea><br><br>
+                <textarea name="content" id="content" cols="30" rows="10">{!! $product -> content !!}</textarea><br><br>
                 <span>Popüler</span><br>
                 <select style="width: 20%;" name="is_popular" id="">
                     <option value="1">Popüler Ürün</option>
@@ -34,4 +34,8 @@
         </center>
         <br>
     </div>
+
+    <script>
+        CKEDITOR.replace('content');
+    </script>
 @endsection
