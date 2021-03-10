@@ -4,14 +4,16 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{asset('front/media/slider.jpeg')}}" class="d-block w-100" alt="...">
+                    <img src="{{asset('/slider/'.$headslider -> path)}}" class="d-block w-100" alt="...">
                 </div>
+                @foreach($slider as $sliders)
+                    @if($sliders -> id == $headslider -> id)
+                        @continue(1)
+                    @endif
                 <div class="carousel-item">
-                    <img src="{{asset('front/media/slider2.jpeg')}}" class="d-block w-100" alt="...">
+                    <img src="{{asset('/slider/'.$sliders -> path)}}" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
-                    <img src="{{asset('front/media/slider3.jpeg')}}" class="d-block w-100" alt="...">
-                </div>
+                @endforeach
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -42,10 +44,13 @@
             <!-- Swiper -->
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href="#"><img style="height: 220px;" id="slider-img" src="{{asset('front/media/dispanser.jpeg')}}" alt=""></a></div>
-                    <div class="swiper-slide"><a href="#"><img style="height: 220px;" id="slider-img" src="{{asset('front/media/dispanser.jpeg')}}" alt=""></a></div>
-                    <div class="swiper-slide"><a href="#"><img style="height: 220px;" id="slider-img" src="{{asset('front/media/dispanser.jpeg')}}" alt=""></a></div>
-                    <div class="swiper-slide"><a href="#"><img style="height: 220px;" id="slider-img" src="{{asset('front/media/dispanser.jpeg')}}" alt=""></a></div>
+                    @foreach($is_popular as $is_populars)
+                    <div class="swiper-slide">
+                        <a href="{{route('detay',$is_populars -> id)}}">
+                            <img style="height: 220px;" id="slider-img" src="{{asset('/urunler/'.$is_populars -> path)}}" alt="">
+                        </a>
+                    </div>
+                    @endforeach
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>

@@ -6,10 +6,14 @@
     </div>
 
     <section>
+
         <div class="content">
-            <h4>Başlık</h4>
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsum unde nihil iste cupiditate sequi at, possimus iusto illum quis architecto consequatur asperiores blanditiis et ullam magni doloremque nostrum sapiente.</h5>
+            @foreach($about as $abouts)
+            <h4>{{$abouts -> title}}</h4>
+            <h5>{{$abouts -> content}}</h5>
+            @endforeach
         </div>
+
     </section>
 
 @endsection

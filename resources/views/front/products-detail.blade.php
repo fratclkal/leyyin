@@ -3,14 +3,13 @@
 
     <section>
         <div class="content">
-            <img src="{{asset('front/media/dispanser.jpeg')}}" alt="">
+            <img src="{{asset('/urunler/'.$product -> path)}}" alt="">
             <div class="details">
-                <h5>DİSPANSER PEÇETE</h5>
+                <h5>{{$product -> title}}</h5>
                 <table>
-                    <tr><th>SasdasdasdasdasdasddasdasdA</th> </tr>
-                    <tr><th>AS</th></tr>
-                    <tr><th>SA</th></tr>
-                    <tr><th>asdasdasdasdadasdasdassdasdassdasdasdasdAS</th> </tr>
+
+                    <tr><th>{{$product -> content}}</th></tr>
+
                 </table>
             </div>
         </div>

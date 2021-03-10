@@ -25,28 +25,29 @@
 <button href="javascript:" onclick="open_menu()" id="open-menu-button">&#9776</button>
 <div id="mobile-menu">
     <ul>
-        <li><a href="{{route('index')}}"><label><i class="fas fa-home" ></i>ANA SAYFA</label></a></li>
-        <li><a href="{{route('products')}}"><label><i class="fab fa-buffer" ></i>ÜRÜNLER </label></a></li>
-        <li><a href="{{route('about')}}"><label ><i class="far fa-building" ></i>KURUMSAL</label></a></li>
-        <li><a href="{{route('contact')}}"><label ><i class="far fa-address-card" ></i>İLETİŞİM</label></a></li>
+        <li><a href=""><label><i class="fas fa-home" ></i>ANA SAYFA</label></a></li>
+        <li><a href=""><label><i class="fab fa-buffer" ></i>ÜRÜNLER </label></a></li>
+        <li><a href=""><label ><i class="far fa-building" ></i>KURUMSAL</label></a></li>
+        <li><a href=""><label ><i class="far fa-address-card" ></i>İLETİŞİM</label></a></li>
     </ul>
     <button href="javascript:" onclick="close_menu()" id="close-menu-button">&times;</button>
 </div>
 
 <div class="altern-body">
     <header>
-        <div class="mobile-logo"><a href="index.html"><img src="{{asset('front/media/logoo.png')}}" alt=""></a></div>
+        <div class="mobile-logo"><a href="#"><img src="{{asset('front/media/logoo.png')}}" alt=""></a></div>
         <ul id="desktop-menu">
-            <li><a href="{{route('contact')}}"> <i class="fas fa-home" ></i> ANA SAYFA</a></li>
-            <li><a href="{{route('contact')}}"><i class="fab fa-buffer"></i>ÜRÜNLER</a>
+            <li><a href=""> <i class="fas fa-home" ></i> ANA SAYFA</a></li>
+            <li><a href=""><i class="fab fa-buffer"></i>ÜRÜNLER</a>
                 <ul>
-                    <li><a href="html/products.html">DİSPANSER PLUS PEÇETE</a></li>
-                    <li><a href="#">MOZAİK asdasdasdasd</a></li>
+                    @foreach($product = App\Models\Product::all() -> where('is_deleted',0) as $products)
+                    <li><a href="{{route('detay',$products -> id)}}">{{$products -> title}}</a></li>
+                    @endforeach
                 </ul>
             </li>
-            <a href="{{route('contact')}}"><img id="logo" src="{{asset('front/media/logoo.png')}}" alt=""></a>
-            <li><a href="{{route('contact')}}"><i class="far fa-building"></i>KURUMSAL</a></li>
-            <li><a href="{{route('contact')}}"><i class="far fa-address-card"></i>İLETİŞİM</a></li>
+            <a href=""><img id="logo" src="{{asset('front/media/logoo.png')}}" alt=""></a>
+            <li><a href=""><i class="far fa-building"></i>KURUMSAL</a></li>
+            <li><a href=""><i class="far fa-address-card"></i>İLETİŞİM</a></li>
         </ul>
     </header>
 
@@ -54,7 +55,7 @@
 
     <footer>
         <h5>Copyright © 1926 - 2021 MOPAK Kağıt, Karton ve Sanayi A.Ş.</h5>
-        <p>developped by FIRAT</p>
+        <p>by firatcelkal@gmail.com</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> <!-- Typed CDN-->

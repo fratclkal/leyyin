@@ -6,12 +6,10 @@
 
     <section>
         <div class="products">
-            <a href="#"><img src="{{asset('front/media/dispanser.jpeg')}}" alt=""></a>
-            <a href="#"><img src="{{asset('front/media/dispanser.jpeg')}}" alt=""></a>
-            <a href="#"><img src="{{asset('front/media/dispanser.jpeg')}}" alt=""></a>
-            <a href="#"><img src="{{asset('front/media/dispanser.jpeg')}}" alt=""></a>
-            <a href="#"><img src="{{asset('front/media/dispanser.jpeg')}}" alt=""></a>
-            <a href="#"><img src="{{asset('front/media/dispanser.jpeg')}}" alt=""></a>
+
+            @foreach($product as $products)
+            <a href="{{route('detay',$products -> id)}}"><img src="{{asset('/urunler/'. $products -> path)}}" alt=""></a>
+            @endforeach
 
         </div>
     </section>

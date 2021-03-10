@@ -90,6 +90,7 @@ section .content .contact{
     justify-content: center;
     border-left: 10px solid #333;
     padding-left: 8px;
+    text-align:start;
 }
 
 
@@ -99,8 +100,8 @@ section .content .contact h5{
 }
 
 
-section .content .contact h4{
-    margin-left: 40px
+section .content .contact h6{
+    margin-left: 30px
  }
 
 section .content .contact span{

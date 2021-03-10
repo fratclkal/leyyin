@@ -5,6 +5,7 @@ namespace App\Http\Controllers\front;
 use App\Http\Controllers\Controller;
 use App\Models\Contact;
 use App\Models\Menu;
+use App\Models\MiniSlider;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -35,6 +36,8 @@ class ProductController extends Controller
         $menu = Menu::all()->where('is_deleted',0);
         return view('front.menu',compact('menu'));
     }
+
+
 
 
 }

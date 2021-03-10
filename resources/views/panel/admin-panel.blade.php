@@ -37,7 +37,7 @@
                     </a>
                 </li>
                 <li class="nav-item active  ">
-                    <a class="nav-link" href="javascript:void(0)">
+                    <a class="nav-link" href="{{route('product-list')}}">
                         <i class="material-icons">dashboard</i>
                         <p>Ürünler</p>
                     </a>
@@ -80,6 +80,9 @@
     @yield('product')
     @yield('product-list')
     @yield('product-update')
+    @yield('minislider')
+    @yield('minislider-list')
+    @yield('minislider-update')
 </div>
 
 

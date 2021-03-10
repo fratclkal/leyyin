@@ -6,6 +6,7 @@ use App\Http\Controllers;
 use App\Models\About;
 use App\Models\Contact;
 use App\Models\Menu;
+use App\Models\MiniSlider;
 use App\Models\Product;
 use App\Models\Slider;
 use Illuminate\Http\Request;
@@ -177,6 +178,7 @@ class AdminController extends Controller
         $product = new Product();
         $product -> title = $request -> title;
         $product -> content = $request -> content;
+        $product -> is_popular = $request -> is_popular;
 
         if($file = $request -> file('path')){
             $name = $file -> getClientOriginalName();
@@ -207,6 +209,7 @@ class AdminController extends Controller
         $product -> update([
            'title' => $request -> title,
            'content' => $request -> content,
+            'is_popular' => $request -> is_popular
         ]);
         if($file = $request -> file('path')){
             $name = $file -> getClientOriginalName();
@@ -222,6 +225,64 @@ class AdminController extends Controller
         $product = Product::find($id);
         return view('panel.product.product-update',compact('product'));
     }
+
+    /*
+    public function miniSlider(){
+        return view('panel.minislider.minislider');
+    }
+
+    public function createMiniSlider(Request $request){
+        $minislider = new MiniSlider();
+
+        $minislider -> title = $request -> title;
+        if($file = $request -> file('path')){
+            $name = $file -> getClientOriginalName();
+            $file -> move('miniSlider/',$name);
+            $minislider -> path = $name;
+        }
+        $minislider -> save();
+
+        return redirect() -> route('minislider-list');
+    }
+
+    public function listMiniSlider(){
+        $minislider = MiniSlider::where('is_deleted',0)->get();
+
+        return view('panel.minislider.minislider-list',compact('minislider'));
+    }
+
+    public function updateMiniSlider(Request $request, $id){
+        $minislider = MiniSlider::find($id);
+        $minislider -> update([
+            'title' => $request -> title
+        ]);
+
+        if($file = $request -> file('path')){
+            $name = $file ->getClientOriginalName();
+            $file -> move('miniSlider/',$name);
+            $minislider -> path = $name;
+        }
+        $minislider -> save();
+
+        return redirect() -> route('minislider-list');
+
+    }
+
+    public function showMiniSlider($id){
+        $minislider = MiniSlider::find($id);
+        return view('panel.minislider.minislider-update',compact('minislider'));
+    }
+
+    public function deleteMiniSlider($id){
+        $minislider = MiniSlider::find($id);
+        $minislider -> update([
+            'is_deleted' => 1
+        ]);
+
+        return redirect() -> route('minislider-list');
+    }
+
+    */
 
 }
 
