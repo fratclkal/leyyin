@@ -18,7 +18,7 @@
             <hr>
             @foreach($about as $abouts)
             <h4>{{$abouts -> title}}</h4>
-                <p>{{$abouts -> content}}</p>
+                <p>{!!$abouts -> content!!}</p>
                 <a href="{{route('about-update',$abouts -> id)}}"><button>Güncelle</button></a>
                 <hr>
             @endforeach

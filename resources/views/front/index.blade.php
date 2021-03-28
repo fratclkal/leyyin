@@ -25,36 +25,36 @@
 <button href="javascript:" onclick="open_menu()" id="open-menu-button">&#9776</button>
 <div id="mobile-menu">
     <ul>
-        <li><a href=""><label><i class="fas fa-home" ></i>ANA SAYFA</label></a></li>
-        <li><a href=""><label><i class="fab fa-buffer" ></i>ÜRÜNLER </label></a></li>
-        <li><a href=""><label ><i class="far fa-building" ></i>KURUMSAL</label></a></li>
-        <li><a href=""><label ><i class="far fa-address-card" ></i>İLETİŞİM</label></a></li>
+        <li><a href="{{route('sliderdeneme')}}"><label><i class="fas fa-home" ></i>ANA SAYFA</label></a></li>
+        <li><a href="{{route('urun')}}"><label><i class="fab fa-buffer" ></i>ÜRÜNLER </label></a></li>
+        <li><a href="{{route('kurumsal')}}"><label ><i class="far fa-building" ></i>KURUMSAL</label></a></li>
+        <li><a href="{{route('iletisimler')}}"><label ><i class="far fa-address-card" ></i>İLETİŞİM</label></a></li>
     </ul>
     <button href="javascript:" onclick="close_menu()" id="close-menu-button">&times;</button>
 </div>
 
 <div class="altern-body">
     <header>
-        <div class="mobile-logo"><a href="#"><img src="{{asset('front/media/logoo.png')}}" alt=""></a></div>
+        <div class="mobile-logo"><a href="{{route('sliderdeneme')}}"><img src="{{asset('front/media/logoo.png')}}" alt=""></a></div>
         <ul id="desktop-menu">
-            <li><a href=""> <i class="fas fa-home" ></i> ANA SAYFA</a></li>
-            <li><a href=""><i class="fab fa-buffer"></i>ÜRÜNLER</a>
+            <li><a href="{{route('sliderdeneme')}}"> <i class="fas fa-home" ></i> ANA SAYFA</a></li>
+            <li><a href="{{route('urun')}}"><i class="fab fa-buffer"></i>ÜRÜNLER</a>
                 <ul>
                     @foreach($product = App\Models\Product::all() -> where('is_deleted',0) as $products)
                     <li><a href="{{route('detay',$products -> id)}}">{{$products -> title}}</a></li>
                     @endforeach
                 </ul>
             </li>
-            <a href=""><img id="logo" src="{{asset('front/media/logoo.png')}}" alt=""></a>
-            <li><a href=""><i class="far fa-building"></i>KURUMSAL</a></li>
-            <li><a href=""><i class="far fa-address-card"></i>İLETİŞİM</a></li>
+            <a href="{{route('sliderdeneme')}}"><img id="logo" src="{{asset('front/media/logoo.png')}}" alt=""></a>
+            <li><a href="{{route('kurumsal')}}"><i class="far fa-building"></i>KURUMSAL</a></li>
+            <li><a href="{{route('iletisimler')}}"><i class="far fa-address-card"></i>İLETİŞİM</a></li>
         </ul>
     </header>
 
     @yield('content')
 
     <footer>
-        <h5>Copyright © 1926 - 2021 MOPAK Kağıt, Karton ve Sanayi A.Ş.</h5>
+        <h5>Copyright © 1999 - 2021 ÇÖZÜM KAĞIT</h5>
         <p>by firatcelkal@gmail.com</p>
     </footer>
 

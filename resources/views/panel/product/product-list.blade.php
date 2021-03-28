@@ -23,7 +23,7 @@
                 <h4>{{$products -> title}}</h4>
                 <li>
                     <img src="{{asset('/urunler/'.$products -> path)}}" alt="" style="height: 200px; width: 200px;">
-                    <span style=" margin: 0 0 0 10%;">{{$products -> content}}</span>
+                    <span style=" margin: 0 0 0 10%;">{!! $products -> content !!}</span>
                 </li>
             </ul>
             <a style="margin: 0 0 0 75%;" href="{{route('product-update',$products -> id)}}"><button>Güncelle</button></a>
@@ -32,4 +32,5 @@
         @endforeach
 
     </div>
+
 @endsection

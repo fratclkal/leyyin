@@ -10,7 +10,7 @@
         <div class="content">
             @foreach($about as $abouts)
             <h4>{{$abouts -> title}}</h4>
-            <h5>{{$abouts -> content}}</h5>
+            <h5>{!!$abouts -> content!!}</h5>
             @endforeach
         </div>
 

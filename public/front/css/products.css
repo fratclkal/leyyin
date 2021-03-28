@@ -85,7 +85,6 @@ section .products{
 }
 
 section .products a{
-  background-color: red;
   margin: 15px 20px;
 }
 

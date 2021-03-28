@@ -27,18 +27,13 @@
         Tip 2: you can also add an image using data-image tag
     -->
         <div class="logo">
-            <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+            <a href="{{route('firat.index')}}" class="simple-text logo-normal">
                 Leyyin Peçete
             </a>
         </div>
         <div class="sidebar-wrapper">
             <ul class="nav">
-                <li class="nav-item active  ">
-                    <a class="nav-link" href="javascript:void(0)">
-                        <i class="material-icons">dashboard</i>
-                        <p>Menü</p>
-                    </a>
-                </li>
+
                 <li class="nav-item active  ">
                     <a class="nav-link" href="{{route('product-list')}}">
                         <i class="material-icons">dashboard</i>
@@ -46,24 +41,24 @@
                     </a>
                 </li>
                 <li class="nav-item active  ">
-                    <a class="nav-link" href="javascript:void(0)">
+                    <a class="nav-link" href="{{route('slider-list')}}">
                         <i class="material-icons">dashboard</i>
                         <p>Slider Fotoğraflar</p>
                     </a>
                 </li>
                 <li class="nav-item active  ">
-                    <a class="nav-link" href="javascript:void(0)">
+                    <a class="nav-link" href="{{route('contact-list')}}">
                         <i class="material-icons">dashboard</i>
                         <p>İletişim</p>
                     </a>
                 </li>
                 <li class="nav-item active  ">
-                    <a class="nav-link" href="javascript:void(0)">
+                    <a class="nav-link" href="{{route('about-list')}}">
                         <i class="material-icons">dashboard</i>
                         <p>Hakkımızda</p>
                     </a>
                 </li>
-                <form method="POST" action="{{ route('logout') }}">
+                <form style="margin: 10% 0 0 10%" method="POST" action="{{ route('logout') }}">
                     @csrf
                     <x-jet-dropdown-link href="{{ route('logout') }}" onclick="event.preventDefault(); this.closest('form').submit();">
                         <i class="fa fa-sign-out"></i>{{ __('Logout') }}
