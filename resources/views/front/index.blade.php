@@ -45,9 +45,10 @@
                     @endforeach
                 </ul>
             </li>
-            <a href="{{route('sliderdeneme')}}"><img id="logo" src="{{asset('front/media/logoo.png')}}" alt=""></a>
-            <li><a href="{{route('kurumsal')}}"><i class="far fa-building"></i>KURUMSAL</a></li>
-            <li><a href="{{route('iletisimler')}}"><i class="far fa-address-card"></i>İLETİŞİM</a></li>
+                <a href="{{route('sliderdeneme')}}"><img id="logo" src="{{asset('front/media/logoo.png')}}" alt=""></a>
+                <li><a href="{{route('kurumsal')}}"><i class="far fa-building"></i>KURUMSAL</a></li>
+                <li><a href="{{route('iletisimler')}}"><i class="far fa-address-card"></i>İLETİŞİM</a>
+            </li>
         </ul>
     </header>
 
@@ -55,7 +56,7 @@
 
     <footer>
         <h5>Copyright © 1999 - 2021 ÇÖZÜM KAĞIT</h5>
-        <p>by firatcelkal@gmail.com</p>
+        <h5>by firatcelkal@gmail.com</h5>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> <!-- Typed CDN-->

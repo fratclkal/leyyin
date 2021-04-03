@@ -1,8 +1,9 @@
 @extends('front.index')
 @section('content')
 
-    <div class="contact-banner">
-        <h3>İletişim</h3>
+    <div style="justify-content: start" class="mobile-banner contact-banner">
+        <h1 class="contact-title" class="title">İletişim</h1>
+        <img src="{{ asset('front/media/contact-us.jpg') }}" alt="">
     </div>
 
     <section>

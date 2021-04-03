@@ -85,12 +85,13 @@ section .content{
 }
 
 section .content h4 {
-    padding-top: 50px;
     font-size: 27px;
+    padding-left: 7px;
     margin-bottom: 30px;
 }
 
 section .content h5{
+    width: 100%;
     font-size: 20px;
     margin-bottom: 300px;
     font-weight: 200;

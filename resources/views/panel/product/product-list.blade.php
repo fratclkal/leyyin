@@ -8,7 +8,14 @@
         span{color: black; font: 20px bold Tahoma;}
         h4{text-align: center; color: red; font: 29px bold Tahoma;}
         button{background: #4dd0e1;}
+        .box ul{
+            list-style-type: none;
+        }
 
+        .box ul li{
+            display: flex;
+
+        }
     </style>
 @endsection
 @section('product-list')
@@ -23,7 +30,7 @@
                 <h4>{{$products -> title}}</h4>
                 <li>
                     <img src="{{asset('/urunler/'.$products -> path)}}" alt="" style="height: 200px; width: 200px;">
-                    <span style=" margin: 0 0 0 10%;">{!! $products -> content !!}</span>
+                    <div style=" margin: 20px 0 0 10%;">{!! $products -> content !!}</div>
                 </li>
             </ul>
             <a style="margin: 0 0 0 75%;" href="{{route('product-update',$products -> id)}}"><button>Güncelle</button></a>

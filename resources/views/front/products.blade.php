@@ -1,7 +1,9 @@
 @extends('front.index')
 @section('content')
 
-    <div class="products-banner">
+    <div class="mobile-banner">
+        <h1 style="color: black" class="title">Ürünlerimiz</h1>
+        <img src="{{ asset('front/media/product-banner.png') }}" alt="">
     </div>
 
     <section>

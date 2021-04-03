@@ -46,7 +46,7 @@ header{
 .contact-banner{
     width: 100%;
     background-size: contain;
-    background-position: center;
+    background-position: center !important;
     background: url(../media/contact-us.jpg);
     height: 350px;
     position: relative;
