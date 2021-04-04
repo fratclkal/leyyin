@@ -28,13 +28,13 @@
 
     <div class="infos">
         <div class="number">
-            <h5><i class="fas fa-phone"></i> 530 000 00 00</h5>
+            <h5><i class="fas fa-phone"></i> (0488) 213 36 18</h5>
         </div>
         <div class="slogan">
             <h4>Adı gibi <span class="typing"></span></h4>
         </div>
         <div class="mail">
-            <h5><i class="far fa-envelope"></i>test@gmail.com</h5>
+            <h5><i class="far fa-envelope"></i>cozumreklam72@gmail.com</h5>
         </div>
     </div>
 
