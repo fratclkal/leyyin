@@ -197,7 +197,11 @@ header ul li:hover li{
 
 .infos i{
     margin-right: 5px;
-    font-size: 20px;
+    font-size: 1.2vw;
+}
+
+.mobile-banner .title{
+    display: none;
 }
 
 .infos .number{
@@ -210,6 +214,7 @@ header ul li:hover li{
 .infos .number h5{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    font-size: 1.2vw
 }
 
 .infos .slogan{
@@ -239,6 +244,7 @@ header ul li:hover li{
 
 .infos .mail h5{
     font-family: 'Roboto', sans-serif;
+    font-size: 1.2vw;
     font-weight: 300;
 }
 
@@ -301,6 +307,10 @@ header ul li:hover li{
     -webkit-align-items: center;
     align-items: center;
   }
+
+    .contact-title{
+        display: none;
+    }
 
   .append-buttons {
     text-align: center;
@@ -402,7 +412,15 @@ footer h5:last-child{
 @media only screen and (max-width : 1024px) {
 
     .contact-title{
+        display: block;
+    }
+
+    .contact-title{
         margin-left: 0px;
+    }
+
+    .mobile-banner .title{
+        display: block;
     }
 
     .contact-banner{
@@ -532,7 +550,7 @@ footer h5:last-child{
     /* INFOS START */
 
     .infos .number h5{
-        font-size: 15px;
+        font-size: 1.7vw;
     }
 
     .infos .slogan{
@@ -549,7 +567,6 @@ footer h5:last-child{
     }
 
     .infos .mail h5{
-        font-size: 15px;
     }
 
     /* INFOS END */
